@@ -29,3 +29,31 @@
 .box {
   @apply border-4 border-black shadow-3xl shadow-black;
 }
+
+#first, #second, #third {
+  animation: 150ms cubic-bezier(0.4, 0, 0.2, 1) first-fade-in forwards;
+}
+
+#first {
+  animation-delay: 200ms;
+}
+
+#second {
+  animation-delay: 400ms;
+}
+
+#third {
+  animation-delay: 600ms;
+}
+
+@keyframes first-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    @apply opacity-100;
+  }
+}

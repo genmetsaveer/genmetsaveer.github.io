@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,10 +11,11 @@
       rel="stylesheet"
     />
     <title>Gen Metsaveer</title>
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body class="dark:bg-dark bg-white text-black">
     <div class="flex flex-col m-4 sm:m-8 md:m-12 lg:m-16 xl:m-20">
-      <div class="text-center bg-turquoise text-white p-4 m-8 box">
+      <div id="first" class="opacity-0 text-center bg-turquoise text-white p-4 m-8 box">
         <h1
           class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold"
         >
@@ -22,11 +23,11 @@
         </h1>
       </div>
 
-      <div class="p-4 font-medium bg-light-green m-8 box">
+      <div id="second" class="opacity-0 p-4 font-medium bg-light-green m-8 box">
         <h2 class="text-lg md:text-xl xl:text-2xl">who am i?</h2>
       </div>
 
-      <div class="w-full flex lg:flex-row flex-col">
+      <div id="third" class="opacity-0 w-full flex lg:flex-row flex-col">
         <div class="lg:w-1/2 bg-salmon p-4 m-8 box relative h-80">
           <div class="-top-2 -left-2 square-mark"></div>
           <div class="-top-2 inset-x-0 mx-auto square-mark"></div>
@@ -74,6 +75,5 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
